@@ -4,7 +4,7 @@ import numpy as np
 import os
 
 # 设置 MJCF 文件路径
-xml_path = "./resources/robots/go2/scene.xml"  # 这里换成你的实际路径
+xml_path = "./resources/robots/go2/scene.xml"
 
 # 加载 MJCF 模型
 model = mujoco.MjModel.from_xml_path(xml_path)

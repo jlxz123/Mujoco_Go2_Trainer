@@ -324,9 +324,8 @@ if __name__ == "__main__":
         writer.add_scalar("charts/SPS", int(global_step / (time.time() - start_time)), global_step)
 
     if args.save_model:
-        model_path = f"models/{args.env_id}_{args.exp_name}"
-        os.makedirs(model_path, exist_ok=True)
-        torch.save(agent.state_dict(), model_path + f"/{datetime.datetime.now().strftime('%Y-%m-%d_%H-%M-%S')}.pth"")
+        model_path = f"models/{args.env_id}_{args.exp_name}/{datetime.datetime.now().strftime('%Y-%m-%d_%H-%M-%S')}.pth"
+        torch.save(agent.state_dict(), model_path)
         print(f"model saved to {model_path}")
         from eval import evaluate
 

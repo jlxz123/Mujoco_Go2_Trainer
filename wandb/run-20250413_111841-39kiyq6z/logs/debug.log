@@ -1,0 +1,28 @@
+2025-04-13 11:18:41,380 INFO    MainThread:16756 [wandb_setup.py:_flush():76] Configure stats pid to 16756
+2025-04-13 11:18:41,380 INFO    MainThread:16756 [wandb_setup.py:_flush():76] Loading settings from C:\Users\jlxz1\.config\wandb\settings
+2025-04-13 11:18:41,380 INFO    MainThread:16756 [wandb_setup.py:_flush():76] Loading settings from C:\Users\jlxz1\Desktop\Go2_Mujoco_Trainer\wandb\settings
+2025-04-13 11:18:41,380 INFO    MainThread:16756 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2025-04-13 11:18:41,380 INFO    MainThread:16756 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2025-04-13 11:18:41,380 INFO    MainThread:16756 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': 'Go2_rl\\scripts\\train.py', 'program': 'c:\\Users\\jlxz1\\Desktop\\Go2_Mujoco_Trainer\\Go2_rl\\scripts\\train.py'}
+2025-04-13 11:18:41,380 INFO    MainThread:16756 [wandb_init.py:_log_setup():506] Logging user logs to C:\Users\jlxz1\Desktop\Go2_Mujoco_Trainer\wandb\run-20250413_111841-39kiyq6z\logs\debug.log
+2025-04-13 11:18:41,385 INFO    MainThread:16756 [wandb_init.py:_log_setup():507] Logging internal logs to C:\Users\jlxz1\Desktop\Go2_Mujoco_Trainer\wandb\run-20250413_111841-39kiyq6z\logs\debug-internal.log
+2025-04-13 11:18:41,385 INFO    MainThread:16756 [wandb_init.py:init():546] calling init triggers
+2025-04-13 11:18:41,385 INFO    MainThread:16756 [wandb_init.py:init():552] wandb.init called with sweep_config: {}
+config: {'exp_name': 'ppo', 'seed': 1, 'torch_deterministic': True, 'track': True, 'wandb_project_name': 'Go2_Mujoco', 'wandb_entity': None, 'capture_video': False, 'save_model': True, 'checkpoint': None, 'env_id': 'Unitree-Go2', 'total_timesteps': 1000000, 'learning_rate': 0.0003, 'num_envs': 8, 'num_steps': 2048, 'anneal_lr': True, 'gamma': 0.99, 'gae_lambda': 0.95, 'num_minibatches': 32, 'update_epochs': 10, 'norm_adv': True, 'clip_coef': 0.2, 'clip_vloss': True, 'ent_coef': 0.0, 'vf_coef': 0.5, 'max_grad_norm': 0.5, 'target_kl': None, 'batch_size': 16384, 'minibatch_size': 512, 'num_iterations': 61}
+2025-04-13 11:18:41,386 INFO    MainThread:16756 [wandb_init.py:init():602] starting backend
+2025-04-13 11:18:41,386 INFO    MainThread:16756 [wandb_init.py:init():606] setting up manager
+2025-04-13 11:18:41,388 INFO    MainThread:16756 [backend.py:_multiprocessing_setup():106] multiprocessing start_methods=spawn, using: spawn
+2025-04-13 11:18:41,407 INFO    MainThread:16756 [wandb_init.py:init():613] backend started and connected
+2025-04-13 11:18:41,418 INFO    MainThread:16756 [wandb_init.py:init():701] updated telemetry
+2025-04-13 11:18:41,447 INFO    MainThread:16756 [wandb_init.py:init():741] communicating run to backend with 60.0 second timeout
+2025-04-13 11:18:42,994 INFO    MainThread:16756 [wandb_run.py:_on_init():2131] communicating current version
+2025-04-13 11:18:43,611 INFO    MainThread:16756 [wandb_run.py:_on_init():2140] got version response upgrade_message: "wandb version 0.19.9 is available!  To upgrade, please run:\n $ pip install wandb --upgrade"
+
+2025-04-13 11:18:43,611 INFO    MainThread:16756 [wandb_init.py:init():789] starting run threads in backend
+2025-04-13 11:18:57,280 INFO    MainThread:16756 [wandb_run.py:_console_start():2112] atexit reg
+2025-04-13 11:18:57,281 INFO    MainThread:16756 [wandb_run.py:_redirect():1967] redirect: SettingsConsole.WRAP_RAW
+2025-04-13 11:18:57,281 INFO    MainThread:16756 [wandb_run.py:_redirect():2032] Wrapping output streams.
+2025-04-13 11:18:57,281 INFO    MainThread:16756 [wandb_run.py:_redirect():2057] Redirects installed.
+2025-04-13 11:18:57,282 INFO    MainThread:16756 [wandb_init.py:init():831] run started, returning control to user process
+2025-04-13 11:18:57,282 INFO    MainThread:16756 [wandb_run.py:_tensorboard_callback():1394] tensorboard callback: runs/Unitree-Go2__ppo__1__1744514312, True
+2025-04-13 11:57:36,411 WARNING MsgRouterThr:16756 [router.py:message_loop():77] message_loop has been closed

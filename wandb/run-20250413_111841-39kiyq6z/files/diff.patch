@@ -1,0 +1,38 @@
+diff --git a/Go2_rl/env/__pycache__/__init__.cpython-310.pyc b/Go2_rl/env/__pycache__/__init__.cpython-310.pyc
+index 394fd55..8c3c14b 100644
+Binary files a/Go2_rl/env/__pycache__/__init__.cpython-310.pyc and b/Go2_rl/env/__pycache__/__init__.cpython-310.pyc differ
+diff --git a/Go2_rl/env/__pycache__/go2.cpython-310.pyc b/Go2_rl/env/__pycache__/go2.cpython-310.pyc
+index a7f6125..a7c8ed6 100644
+Binary files a/Go2_rl/env/__pycache__/go2.cpython-310.pyc and b/Go2_rl/env/__pycache__/go2.cpython-310.pyc differ
+diff --git a/Go2_rl/scripts/train.py b/Go2_rl/scripts/train.py
+index d19c562..b463f16 100644
+--- a/Go2_rl/scripts/train.py
++++ b/Go2_rl/scripts/train.py
+@@ -42,7 +42,7 @@ class Args:
+     # 算法相关变量
+     env_id: str = "Unitree-Go2"
+     """环境名称"""
+-    total_timesteps: int = 100000
++    total_timesteps: int = 1000000
+     """实验的总时间步长"""
+     learning_rate: float = 3e-4
+     """学习率"""
+diff --git a/README.md b/README.md
+index aa728d9..50c227e 100644
+--- a/README.md
++++ b/README.md
+@@ -1 +1,12 @@
+-# Mujoco_Go2_Trainer
+\ No newline at end of file
++# Unitree Go2 仿真
++
++## 项目简介
++使用 [Mujoco 仿真环境]
++
++
++python 3.10
++pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu126
++pip3 install gymnasium==0.28.1
++pip3 install gymnasium[mujoco]
++pip3 install tensorboard
++pip3 install wandb
